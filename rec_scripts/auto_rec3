@@ -1,0 +1,6 @@
+DIR=$1
+react.py $DIR -p '*_c*.h5' 'tomorec_log3 $f'
+
+# for k in {066..200}; do 
+# tomorec_log /data/2022-07//*"$k".h5;
+# done

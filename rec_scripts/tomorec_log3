@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+tomocupy recon --file-name $1 --remove-stripe-method fw --reconstruction-type full --rotation-axis-auto auto --find-center-end-row 800 --flat-dark-file-name $(find /data/2022-10/Nikitin/. -name *flat* \! -newer $1 -type f \! -samefile $1 |tail -n 1)
+# tomocupy recon_steps --file-name $1 --reconstruction-type full --rotation-axis $2 --remove-stripe-method fw  --retrieve-phase-method paganin --retrieve-phase-alpha 0.0001 --energy 30 --propagation-distance 100 --pixel-size $3 --fbp-filter shepp --nsino-per-chunk 16 --nproj-per-chunk 16
+tomolog run --presentation-url https://docs.google.com/presentation/d/1oiAyp9IngZHoMSsqSpuRC7nyiWM7d18Q4qM2avaswyw/edit?usp=sharing --queue 3 --file-name $1 --beamline 2-bm --zoom [1,2,4]
+# tomolog run --presentation-url https://docs.google.com/presentation/d/1WxNLek-DrLMGrOzqvfRkU9V4jkfavyat4HDrLEqst3Q/edit#slide=id.a9f91db5-5db0-4415-b371-72ca74b22a17 --file-name $1 --beamline 2-bm --idx 1100 --idy 1400 --idz 450 --magnification -1 --min -0.0001 --max 0.0001
