@@ -1,0 +1,11 @@
+Run from user2bmb@pg10ge:~/vnikitin/
+
+python scan_sandstone.py
+
+
+Run log:
+conda activate slack
+
+cd ~/bin/
+
+pv log
